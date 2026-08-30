@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8CC3B20C-56F7-40AF-B677-A35661E57343}</ProjectGuid>
+    <RootNamespace>Entries</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>iphlpapi.lib;ws2_32.lib;rpcrt4.lib;httpapi.lib;advapi32.lib;psapi.lib;taskschd.lib;ole32.lib;oleaut32.lib;wbemuuid.lib;fltlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="diagnostics.cpp" />
+    <ClCompile Include="nt_api.cpp" />
+    <ClCompile Include="process_utils.cpp" />
+    <ClCompile Include="nt_objects.cpp" />
+    <ClCompile Include="security_utils.cpp" />
+    <ClCompile Include="registry_utils.cpp" />
+    <ClCompile Include="enum_tcp_udp.cpp" />
+    <ClCompile Include="enum_named_pipes.cpp" />
+    <ClCompile Include="enum_shared_memory.cpp" />
+    <ClCompile Include="enum_alpc.cpp" />
+    <ClCompile Include="enum_rpc.cpp" />
+    <ClCompile Include="enum_http.cpp" />
+    <ClCompile Include="enum_services.cpp" />
+    <ClCompile Include="enum_mailslots.cpp" />
+    <ClCompile Include="enum_com.cpp" />
+    <ClCompile Include="enum_drivers.cpp" />
+    <ClCompile Include="enum_tasks.cpp" />
+    <ClCompile Include="enum_registry_surfaces.cpp" />
+    <ClCompile Include="enum_browser_native.cpp" />
+    <ClCompile Include="enum_filter_drivers.cpp" />
+    <ClCompile Include="enum_firewall.cpp" />
+    <ClCompile Include="enum_device_interfaces.cpp" />
+    <ClCompile Include="enum_wmi.cpp" />
+    <ClCompile Include="enum_windows.cpp" />
+    <ClCompile Include="enum_persistence.cpp" />
+    <ClCompile Include="enum_kernel_objects.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h" />
+    <ClInclude Include="com_utils.h" />
+    <ClInclude Include="diagnostics.h" />
+    <ClInclude Include="nt_api.h" />
+    <ClInclude Include="process_utils.h" />
+    <ClInclude Include="nt_objects.h" />
+    <ClInclude Include="security_utils.h" />
+    <ClInclude Include="registry_utils.h" />
+    <ClInclude Include="enum_tcp_udp.h" />
+    <ClInclude Include="enum_named_pipes.h" />
+    <ClInclude Include="enum_shared_memory.h" />
+    <ClInclude Include="enum_alpc.h" />
+    <ClInclude Include="enum_rpc.h" />
+    <ClInclude Include="enum_http.h" />
+    <ClInclude Include="enum_services.h" />
+    <ClInclude Include="enum_mailslots.h" />
+    <ClInclude Include="enum_com.h" />
+    <ClInclude Include="enum_drivers.h" />
+    <ClInclude Include="enum_tasks.h" />
+    <ClInclude Include="enum_registry_surfaces.h" />
+    <ClInclude Include="enum_browser_native.h" />
+    <ClInclude Include="enum_filter_drivers.h" />
+    <ClInclude Include="enum_firewall.h" />
+    <ClInclude Include="enum_device_interfaces.h" />
+    <ClInclude Include="enum_wmi.h" />
+    <ClInclude Include="enum_windows.h" />
+    <ClInclude Include="enum_persistence.h" />
+    <ClInclude Include="enum_kernel_objects.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

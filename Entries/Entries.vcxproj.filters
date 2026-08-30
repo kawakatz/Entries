@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Enumerators">
+      <UniqueIdentifier>{B1C2D3E4-F5A6-7890-BCDE-F12345678901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Enumerators">
+      <UniqueIdentifier>{C2D3E4F5-A6B7-8901-CDEF-123456789012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support">
+      <UniqueIdentifier>{D3E4F5A6-B7C8-9012-DEFA-234567890123}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="diagnostics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nt_api.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="process_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nt_objects.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="security_utils.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="registry_utils.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_tcp_udp.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_named_pipes.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_shared_memory.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_alpc.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_rpc.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_http.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_services.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_mailslots.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_com.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_drivers.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_tasks.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_registry_surfaces.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_browser_native.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_filter_drivers.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_firewall.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_device_interfaces.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_wmi.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_windows.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_persistence.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_kernel_objects.cpp">
+      <Filter>Source Files\Enumerators</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="com_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="diagnostics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nt_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="process_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nt_objects.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="security_utils.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="registry_utils.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_tcp_udp.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_named_pipes.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_shared_memory.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_alpc.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_rpc.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_http.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_services.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_mailslots.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_com.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_drivers.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_tasks.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_registry_surfaces.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_browser_native.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_filter_drivers.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_firewall.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_device_interfaces.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_wmi.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_windows.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_persistence.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_kernel_objects.h">
+      <Filter>Header Files\Enumerators</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
