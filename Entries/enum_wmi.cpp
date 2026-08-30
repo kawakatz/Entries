@@ -33,9 +33,11 @@ static std::wstring VariantToString(VARIANT& value) {
         }
         ULONG length = static_cast<ULONG>(upper - lower + 1);
         std::wstring result;
-        if (length >= SECURITY_MIN_SID_SIZE && IsValidSid(bytes)
-            && GetLengthSid(bytes) <= length) {
-            result = SidToAccountName(bytes);
+        auto* sid = reinterpret_cast<SID*>(bytes);
+        if (length >= GetSidLengthRequired(0)
+            && GetSidLengthRequired(sid->SubAuthorityCount) <= length
+            && IsValidSid(sid)) {
+            result = SidToAccountName(sid);
         }
         SafeArrayUnaccessData(value.parray);
         return result;
